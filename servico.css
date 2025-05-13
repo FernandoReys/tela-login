@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #464646dc;
+  
+  color: gainsboro;
+}
+
+/* Header */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a.active {
+  border-bottom: 2px solid #25D366;
+}
+
+/* Seção de serviços */
+.servicos {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.servicos h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.servico-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.servico-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.servico-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555;
+}
+
+.servico-card .preco {
+  font-weight: bold;
+  color: #000;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+/* Botão agendar */
+.btn-agendar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-agendar:hover {
+  background-color: #1ebe5d;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .servico-card {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+
+  .btn-agendar {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

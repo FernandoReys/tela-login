@@ -1,0 +1,123 @@
+/* Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #464646dc;
+  color: #333;
+}
+
+/* Header básico (opcional) */
+header {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a.active {
+  border-bottom: 2px solid #25D366;
+}
+
+/* Seção de contato */
+.contato {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Botão WhatsApp */
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 14px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-whatsapp i {
+  font-size: 1.4rem;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Informações fixas */
+.info-contato {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+}
+
+.info-contato h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  color: #222;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .contato {
+    margin: 30px 15px;
+    padding: 20px;
+  }
+
+  .btn-whatsapp {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

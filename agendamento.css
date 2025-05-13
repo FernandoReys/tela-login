@@ -1,0 +1,142 @@
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: #222;
+  color: #ffffff;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Título da barbearia */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navegação */
+nav {
+  margin-top: 15px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #00000056;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #464646dc;
+  color: #333;
+}
+
+
+.agendamento {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.agendamento h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  color: #222;
+}
+
+.form-agendamento {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-agendamento label {
+  font-weight: bold;
+}
+
+.form-agendamento input,
+.form-agendamento select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-agendamento input:focus,
+.form-agendamento select:focus {
+  border-color: #333;
+  outline: none;
+}
+
+.form-agendamento .btn-agendar {
+  background-color: #333;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.form-agendamento .btn-agendar:hover {
+  background-color: #444;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .agendamento {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-agendamento input,
+  .form-agendamento select {
+    font-size: 1rem;
+  }
+}
